@@ -1,2 +1,1 @@
-# Seismic
-Auto create tokens, transfer token, connect wallet.
+give this repo stars so it will be launched fast...
