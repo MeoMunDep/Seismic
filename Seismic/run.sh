@@ -7,7 +7,7 @@ NC='\033[0m'
 
 chmod +x "$0"
 
-echo -ne "\033]0;name Bot by @MeoMunDep\007"
+echo -ne "\033]0;Séimic Bot by @MeoMunDep\007"
 
 check_node() {
     if ! command -v node &> /dev/null; then
@@ -106,7 +106,7 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 crypto-js ws uuid xlsx readline-sync moment lodash
+npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
