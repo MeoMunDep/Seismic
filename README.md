@@ -120,9 +120,6 @@ Sure! Here's the same explanation in **GitHub-style English Markdown** for use i
   "delayEachAccount": [1, 2],
   "skipInvalidProxy": true,
   "tokenConfig": {
-    "name": "Seismic Token",
-    "symbol": "SEIS",
-    "totalSupply": 1000000,
     "performTransfers": true,
     "numTransfers": 5,
     "amountPerTransfer": [1000, 2000],
