@@ -92,6 +92,7 @@ This file controls the bot’s behavior. Below is an example configuration:
   "timeToRestartAllAccounts": 300,
   "delayEachAccount": [1, 2],
   "skipInvalidProxy": true,
+
   "tokenConfig": {
     "name": "Seismic Token",
     "symbol": "SEIS",
@@ -103,11 +104,58 @@ This file controls the bot’s behavior. Below is an example configuration:
     "recipientAddresses": [""]
   }
 }
-
 ```
 
 - **Fields Explained:**
+Sure! Here's the same explanation in **GitHub-style English Markdown** for use in a `README.md` or documentation file:
 
+---
+
+## 📄 `config.json` – Seismic Token Automation Configuration
+
+```json
+{
+  "howManyAccountsRunInOneTime": 200,
+  "timeToRestartAllAccounts": 300,
+  "delayEachAccount": [1, 2],
+  "skipInvalidProxy": true,
+  "tokenConfig": {
+    "name": "Seismic Token",
+    "symbol": "SEIS",
+    "totalSupply": 1000000,
+    "performTransfers": true,
+    "numTransfers": 5,
+    "amountPerTransfer": [1000, 2000],
+    "useConfiguredAddresses": false,
+    "recipientAddresses": [""]
+  }
+}
+```
+
+---
+
+### 🔧 Main Configuration
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `howManyAccountsRunInOneTime` | `number` | Number of accounts to run concurrently in each batch. |
+| `timeToRestartAllAccounts` | `number` | Time (in seconds) after which all accounts will be restarted. |
+| `delayEachAccount` | `[number, number]` | Random delay range (in seconds) between processing each account. E.g., `[1, 2]` means a delay between 1 and 2 seconds. |
+| `skipInvalidProxy` | `boolean` | If `true`, accounts with invalid proxies will be skipped instead of stopping execution. |
+
+---
+
+### 💰 `tokenConfig` – Token Deployment & Transfer Settings
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `performTransfers` | `boolean` | If `true`, token transfers will be performed after deployment. |
+| `numTransfers` | `number` | Number of transfer actions to execute if `performTransfers` is enabled. |
+| `amountPerTransfer` | `[number, number]` | Random token amount (between `min` and `max`) to send in each transfer. |
+| `useConfiguredAddresses` | `boolean` | If `true`, transfers will only use addresses specified in `recipientAddresses`. |
+| `recipientAddresses` | `string[]` | Array of wallet addresses to receive tokens (used only if `useConfiguredAddresses` is `true`). |
+
+---
 
 ### 2. `privateKeys.txt` - 🗂️ User's Wallet Data
 
