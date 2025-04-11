@@ -95,7 +95,7 @@ This file controls the bot’s behavior. Below is an example configuration:
 
   "tokenConfig": {
     "performTransfers": true,
-    "numTransfers": 5,
+    "numTransfers": [5, 10],
     "amountPerTransfer": [1000, 2000],
     "useConfiguredAddresses": false,
     "recipientAddresses": [""]
