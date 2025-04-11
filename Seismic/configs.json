@@ -4,11 +4,8 @@
   "delayEachAccount": [1, 2],
   "skipInvalidProxy": true,
   "tokenConfig": {
-    "name": "Seismic Token",
-    "symbol": "SEIS",
-    "totalSupply": 1000000,
     "performTransfers": true,
-    "numTransfers": 5,
+    "numTransfers": [5, 10],
     "amountPerTransfer": [1000, 2000],
     "useConfiguredAddresses": false,
     "recipientAddresses": [""]
