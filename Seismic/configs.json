@@ -1,0 +1,16 @@
+{
+  "howManyAccountsRunInOneTime": 200,
+  "timeToRestartAllAccounts": 300,
+  "delayEachAccount": [1, 2],
+  "skipInvalidProxy": true,
+  "tokenConfig": {
+    "name": "Seismic Token",
+    "symbol": "SEIS",
+    "totalSupply": 1000000,
+    "performTransfers": true,
+    "numTransfers": 5,
+    "amountPerTransfer": [1000, 2000],
+    "useConfiguredAddresses": false,
+    "recipientAddresses": [""]
+  }
+}
