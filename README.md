@@ -106,31 +106,6 @@ This file controls the bot’s behavior. Below is an example configuration:
 }
 ```
 
-- **Fields Explained:**
-Sure! Here's the same explanation in **GitHub-style English Markdown** for use in a `README.md` or documentation file:
-
----
-
-## 📄 `config.json` – Seismic Token Automation Configuration
-
-```json
-{
-  "howManyAccountsRunInOneTime": 200,
-  "timeToRestartAllAccounts": 300,
-  "delayEachAccount": [1, 2],
-  "skipInvalidProxy": true,
-  "tokenConfig": {
-    "performTransfers": true,
-    "numTransfers": 5,
-    "amountPerTransfer": [1000, 2000],
-    "useConfiguredAddresses": false,
-    "recipientAddresses": [""]
-  }
-}
-```
-
----
-
 ### 🔧 Main Configuration
 
 | Field | Type | Description |
