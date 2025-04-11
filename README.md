@@ -94,9 +94,6 @@ This file controls the bot’s behavior. Below is an example configuration:
   "skipInvalidProxy": true,
 
   "tokenConfig": {
-    "name": "Seismic Token",
-    "symbol": "SEIS",
-    "totalSupply": 1000000,
     "performTransfers": true,
     "numTransfers": 5,
     "amountPerTransfer": [1000, 2000],
