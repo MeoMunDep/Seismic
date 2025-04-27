@@ -1,1 +1,1 @@
-console.log(`Wait for 50 stars to unlock it!`)
+console.log(`Okay wait me a minutes guys!!!`)
