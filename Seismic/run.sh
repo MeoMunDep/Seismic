@@ -77,6 +77,10 @@ create_default_configs() {
     "amountPerTransfer": [1000, 2000],
     "useConfiguredAddresses": false,
     "recipientAddresses": [""]
+  },
+  "faucet": {
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
   }
 }
 EOL
