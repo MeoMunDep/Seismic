@@ -99,6 +99,11 @@ This file controls the bot’s behavior. Below is an example configuration:
     "amountPerTransfer": [1000, 2000],
     "useConfiguredAddresses": false,
     "recipientAddresses": [""]
+  },
+
+   "faucet": {
+    "maxCaptchaAttempts": 20,
+    "2captchaApiKey": ""
   }
 }
 ```
