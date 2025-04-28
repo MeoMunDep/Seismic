@@ -131,6 +131,15 @@ This file controls the bot’s behavior. Below is an example configuration:
 
 ---
 
+### 🚰 `faucet` – Faucet Claim Settings
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `maxCaptchaAttempts` | `number` | Maximum number of attempts allowed to solve CAPTCHA before giving up. |
+| `2captchaApiKey` | `string` | Your API key for 2Captcha service, used to automatically solve CAPTCHA challenges. |
+
+---
+
 ### 2. `privateKeys.txt` - 🗂️ User's Wallet Data
 
 - Wallets generator: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
