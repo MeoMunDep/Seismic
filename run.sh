@@ -7,7 +7,7 @@ NC='\033[0m'
 
 chmod +x "$0"
 
-echo -ne "\033]0;Séimic Bot by @MeoMunDep\007"
+echo -ne "\033]0;Seismic Bot by @MeoMunDep\007"
 
 check_node() {
     if ! command -v node &> /dev/null; then
