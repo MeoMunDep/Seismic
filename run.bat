@@ -20,11 +20,11 @@ echo Checking dependencies...
 if exist "..\node_modules" (
     echo Using node_modules from parent directory...
     cd ..
-    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc seismic-viem
     cd %~dp0
 ) else (
     echo Installing dependencies in current directory...
-    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+    CALL npm install user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc seismic-viem
 )
 echo Dependencies installation completed!
 
