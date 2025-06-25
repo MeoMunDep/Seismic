@@ -71,7 +71,7 @@ Then, run the npm install command again.
 - For **Linux/macOS**, if you face permission issues with the install command, prepend `sudo` to the command:
 
 ```bash
-sudo npm install --force user-agents axios colors https-proxy-agent socks-proxy-agent ethers web3 solc
+sudo npm install --force user-agents meo-forkcy-utils meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers web3 solc
 ```
 
 ### 3. **Prepare Configuration Files:**
@@ -125,7 +125,7 @@ This file controls the bot’s behavior. Below is an example configuration:
 |-------|------|-------------|
 | `performTransfers` | `boolean` | If `true`, token transfers will be performed after deployment. |
 | `numTransfers` | `number` | Number of transfer actions to execute if `performTransfers` is enabled. |
-| `amountPerTransfer` | `[number, number]` | Random token amount (between `min` and `max`) to send in each transfer. |
+| `amountPerTransfer` | `[number, number]` | Random token amount (between `min` and `max`) to send in each transfer. When transfer ETH(SEISMIC) it will divide by 100000 |
 | `useConfiguredAddresses` | `boolean` | If `true`, transfers will only use addresses specified in `recipientAddresses`. |
 | `recipientAddresses` | `string[]` | Array of wallet addresses to receive tokens (used only if `useConfiguredAddresses` is `true`). |
 
