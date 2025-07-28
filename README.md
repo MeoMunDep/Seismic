@@ -71,7 +71,7 @@ Then, run the npm install command again.
 - For **Linux/macOS**, if you face permission issues with the install command, prepend `sudo` to the command:
 
 ```bash
-sudo npm install --force user-agents meo-forkcy-utils meo-forkcy-colors https-proxy-agent socks-proxy-agent ethers web3 solc
+sudo npm install --force user-agents meo-forkcy-utils meo-forkcy-colors meo-forkcy-proxy ethers web3 solc
 ```
 
 ### 3. **Prepare Configuration Files:**
