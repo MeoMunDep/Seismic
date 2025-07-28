@@ -71,6 +71,7 @@ create_default_configs() {
   "timeToRestartAllAccounts": 300,
   "delayEachAccount": [1, 2],
   "skipInvalidProxy": true,
+  
   "tokenConfig": {
     "performTransfers": true,
     "numTransfers": [5, 10],
@@ -78,6 +79,7 @@ create_default_configs() {
     "useConfiguredAddresses": false,
     "recipientAddresses": [""]
   },
+  
   "faucet": {
     "maxCaptchaAttempts": 20,
     "2captchaApiKey": ""
@@ -113,7 +115,7 @@ print_green "Configuration files have been checked."
 
 print_yellow "Checking dependencies..."
 cd "$MODULES_DIR"
-npm install user-agents axios meo-forkcy-colors meo-forkcy-utils https-proxy-agent socks-proxy-agent ethers web3 solc seismic-viem
+npm install user-agents axios meo-forkcy-colors meo-forkcy-utils meo-forkcy-proxy ethers web3 solc seismic-viem
 cd - > /dev/null
 print_green "Dependencies installation completed!"
 
